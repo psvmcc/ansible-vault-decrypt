@@ -6,14 +6,12 @@ from ansible.parsing.vault import VaultSecret
 import argparse
 import os
 from getpass import getpass
-from importlib.metadata import version
 
 
 parser = argparse.ArgumentParser(description="ansible-vault-decrypt", add_help=False)
 parser.add_argument(
     "-h", "--help", action="help", help="show this help message and exit"
 )
-parser.add_argument("-v", "--version", action="store_true")
 parser.add_argument(
     "-d",
     dest="debug",

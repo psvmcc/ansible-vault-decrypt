@@ -10,7 +10,6 @@ positional arguments:
 
 options:
   -h, --help            show this help message and exit
-  -v, --version
   -d                    debug mode output
   --vault-password-file VAULT_PASSWORD_FILE
                         vault password file

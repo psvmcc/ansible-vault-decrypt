@@ -1,5 +1,7 @@
 # ansible-vault-decrypt
 
+Tool for decrypt ansible inline vault passwords.
+
 ## usage
 
 ```

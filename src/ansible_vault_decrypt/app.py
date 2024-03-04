@@ -71,10 +71,7 @@ def main(vault_secret):
     print(output)
 
 
-if __name__ == "__main__":
-    if args.version:
-        print(version("ansible-vault-decrypt"))
-        exit(0)
+def entry_point():
     if not args.vault_password_file:
         vault_secret = getpass()
     else:
@@ -84,3 +81,7 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         print("Interrupted")
         exit(130)
+
+
+if __name__ == "__main__":
+    entry_point()

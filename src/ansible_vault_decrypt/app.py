@@ -42,6 +42,9 @@ def dict_to_yaml(input_dict, indent=0):
 
 def read_file(file_path):
     try:
+        if os.access(file_path, os.X_OK):
+            result = os.popen(file_path).read()
+            return result
         with open(file_path, "r") as file:
             file = file.read()
         return file
